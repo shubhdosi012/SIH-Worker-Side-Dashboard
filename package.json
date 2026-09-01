@@ -1,0 +1,16 @@
+{
+  "name": "sevasangam-cooperative-gig-platform",
+  "version": "1.0.0",
+  "description": "SevaSangam - Cooperative Gig Services Platform ensuring fair wages and transparency",
+  "scripts": {
+    "dev:server": "cd server && npm.cmd run dev",
+    "dev:client": "cd client && npm.cmd run dev",
+    "seed": "cd server && node seed.js",
+    "install:server": "cd server && npm.cmd install",
+    "install:client": "cd client && npm.cmd install",
+    "install:all": "npm.cmd run install:server && npm.cmd run install:client"
+  },
+  "keywords": ["gig-economy", "cooperative", "services", "fair-wages"],
+  "author": "",
+  "license": "ISC"
+}
