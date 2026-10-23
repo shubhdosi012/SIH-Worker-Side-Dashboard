@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+// GitHub Pages serves this project from its repository subpath.
 export default defineConfig({
+  base: '/SIH-Worker-Side-Dashboard/',
   plugins: [react()],
   server: {
     port: 5173,
