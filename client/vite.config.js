@@ -1,9 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// GitHub Pages serves this project from its repository subpath.
+// GitHub Pages serves this project from a repository subpath.
+// Vercel and local preview use the root path.
+const base = process.env.GITHUB_ACTIONS
+  ? '/SIH-Worker-Side-Dashboard/'
+  : '/';
+
 export default defineConfig({
-  base: '/SIH-Worker-Side-Dashboard/',
+  base,
   plugins: [react()],
   server: {
     port: 5173,
