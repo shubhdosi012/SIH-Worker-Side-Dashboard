@@ -1,0 +1,14 @@
+⚠️  No MONGO_URI provided. Initializing in-memory embedded MongoDB instance...
+✅ Embedded In-Memory MongoDB Connected at mongodb://127.0.0.1:23695/
+⚡ Database empty. Auto-seeding initial cooperative data...
+🌱 Starting SevaSangam Database Seeding...
+🧹 Cleaned existing database collections.
+✅ SevaSangam Database Seeded Successfully!
+----------------------------------------------------
+Demo Credentials for Instant Testing:
+👑 Admin:     admin@sevasangam.org / password123
+🔧 Worker 1:  ramesh.plumber@example.com / password123 (Plumber)
+⚡ Worker 2:  priya.electrician@example.com / password123 (Electrician)
+👤 Customer:  rahul@example.com / password123
+----------------------------------------------------
+🚀 SevaSangam Backend Server running on http://localhost:5000

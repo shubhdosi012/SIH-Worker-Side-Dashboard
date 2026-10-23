@@ -1,18 +1,6 @@
-# Dependencies
-node_modules/
-
-# Environment files (secrets)
-.env
-server/.env
-client/.env
-
-# Logs
-*.log
-server/server.log
-client/dev.log
-
-# Build output
+﻿node_modules/
 client/dist/
-
-# Tooling caches
-client/node_modules/.vite/
+server/node_modules/
+.env
+.env.*
+!.env.example
