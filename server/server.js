@@ -46,7 +46,9 @@ app.use((err, req, res, next) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+// Guard against PORT=0 being exported in the shell environment (0 is a valid but
+// useless listen port — Express would bind a random ephemeral port).
+const PORT = Number(process.env.PORT) > 0 ? Number(process.env.PORT) : 5000;
 
 const startServer = async () => {
   try {
